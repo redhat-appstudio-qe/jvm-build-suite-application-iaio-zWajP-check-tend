@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-wnzg
+  namespace: jvm-build-nkuu-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:05b7ead905d4760ac611419a1d1872051c8557fc1e717a28090522cbb70d7882
+        name: container-image
+        resources: {}
+status: {}
